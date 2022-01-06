@@ -30,6 +30,7 @@ public class QRCodeController {
      * @param height
      * @return
      */
+    //http://localhost:8080/qrcode/getQRCode?content=https://www.baidu.com
     @GetMapping("/getQRCodeBase64")
     public R getQRCode(@RequestParam("content") String content,
                        @RequestParam(value = "logoUrl", required = false) String logoUrl,
